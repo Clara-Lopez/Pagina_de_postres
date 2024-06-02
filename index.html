@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDessert</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-just">Just</span><span class="logo-dessert">Dessert</span>
+        </div>
+        <div class="buttons">
+            <button class="join" onclick="this.style.display='none'">Join</button>
+            <button class="login">Login</button>
+        </div>
+    </header>
+    <div class="search-section">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button onclick="search()">GO</button>
+        </div>
+        <div class="icon-links">
+            <div class="icon-link">
+                <img src="img/cake.png" alt="Cake" class="round-icon">
+                <p>Cake</p>
+            </div>
+            <div class="icon-link">
+                <img src="img/cookie.png" alt="Cookies" class="round-icon">
+                <p>Cookies</p>
+            </div>
+            <div class="icon-link">
+                <img src="img/ice-cream.png" alt="Ice Cream" class="round-icon">
+                <p>Ice Cream</p>
+            </div>
+            <div class="icon-link">
+                <img src="img/pie.png" alt="Pie" class="round-icon">
+                <p>Pie</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="recipe-of-the-day">
+            <h2>Recipe of the Day</h2>
+            <img src="img/orange-tart.jpg" alt="Orange Tea Jelly Tart">
+            <div class="recipe-info">
+                <p class="recipe-title">Orange Tea Jelly Tart</p>
+                <div class="recipe-author-likes">
+                    <p>By: <button class="text">yuripiano</button></p>
+                    <span class="likes" onclick="increaseLikes(this)">68 ♥</span>
+                </div>
+                <button class="full-recipe">See Full Recipe</button>
+            </div>
+        </section>
+        <aside class="recommended">
+    <h2>Recommended for you:</h2>
+    <div class="recommendation">
+        <img src="img/macarons.jpg" alt="Macarons">
+        <div class="recommendation-footer">
+            <p class="title">Macarons</p>
+            <div class="authors">
+                <p>By:</p><button class="text">EmilieW</button>
+                <span class="likes" onclick="increaseLikes(this)">212 ♥</span>
+            </div>
+        </div>
+    </div>
+    <div class="recommendation">
+        <img src="img/creme-brulee.jpg" alt="Dessert">
+        <p class="title">Crème brûlée</p>
+        <div class="recommendation-footer">
+            <div class="authors">
+                <p>By:</p><button class="text">Marisa G</button>
+                <span class="likes" onclick="increaseLikes(this)">144 ♥</span>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
